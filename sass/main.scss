@@ -1,0 +1,51 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    background-color: bisque;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+canvas {
+    border: 5px solid black;
+}
+input {
+    background-image: url("../images/src/pngwing.com.png");
+    background-repeat: no-repeat;
+    background-position: 95%;
+}
+#btn-start {
+    position: absolute;
+    top: 40%;
+    left: 42%;
+    // transform: translate(300%);
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    font-size: 32px;
+
+    &:hover {
+        background-color: rgb(187, 187, 187);
+    }
+
+    &.__pushed {
+        display: none;
+    }
+}
+
+#count {
+    width: 90px;
+    background: darkslateblue;
+    border: 5px solid black;
+    color: aliceblue;
+    font-size: 36px;
+    text-align: center;
+    padding: 20px 0;
+}
+
